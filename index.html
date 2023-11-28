@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <div class="close--bar">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <nav class="navbar">
+            <div class="nav--logo--menu">
+                <div class="nav--logo">
+                    <img class="logo" src="./asset/image/logo.png" alt="">
+                </div>
+                <div class="nav--menu">
+                    <ul>
+                        <li><i class='bx bxs-dashboard'></i> DashBoard</li>
+                        <li><i class='bx bxs-user-rectangle bx-xs'></i> Client</li>
+                        <li><i class='bx bxs-category bx-xs' ></i> Catégorie</li>
+                        <li><i class='bx bxs-receipt bx-xs'></i> Produit</li>
+                        <li><i class='bx bxs-cog bx-xs' ></i> Paramètre</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav--account">
+                <div  class="nav--connect">
+                </div>
+            </div>
+        </nav>
+        <div class="main--container">
+            <div class="title--shearbar--printglo">
+                <h2>DashBoard</h2>
+                <div class="shear">
+                    <i class='bx bx-search-alt-2'></i><input type="text" placeholder="Recherche..."> 
+                </div>
+                <button><i class='bx bx-printer bx-xs' ></i></button>
+            </div>
+            <div class="client">
+                <h3>Client</h3>
+                <div class="tableau">
+                    <table>
+                        <thead>
+                          <tr>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Prénom</th>
+                            <th scope="col">Tél</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Login_Utilisateur</th>
+                          </tr>
+                        </thead>
+                        <tbody id="utilisateur-list">
+                          <tr>
+                            <td>Dupont</td>
+                            <td>Marie</td>
+                            <td>01 23 45 67 89</td>
+                            <td>marie.dupont@example.com</td>
+                            <td>marie_d</td>
+                          </tr> 
+                          <tr>
+                            <td>Smith</td>
+                            <td>John</td>
+                            <td>555-555-1234</td>
+                            <td>john.smith@example.com</td>
+                            <td>john_s</td>
+                          </tr>
+                          <tr>
+                            <td>Garcia</td>
+                            <td>Maria</td>
+                            <td>555-555-5678</td>
+                            <td>maria.garcia@example.com</td>
+                            <td>maria_g</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>                
+            </div>
+            
+        </div>
+        
+    </div>
+    <script type="module" src="./js/refreshDOM.js"></script>
+</body>
+</html> 

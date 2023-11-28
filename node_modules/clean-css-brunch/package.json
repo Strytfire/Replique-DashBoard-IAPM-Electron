@@ -1,0 +1,24 @@
+{
+  "name": "clean-css-brunch",
+  "version": "1.5.1",
+  "description": "Adds CleanCSS support to brunch.",
+  "author": "Paul Miller (http://paulmillr.com/)",
+  "homepage": "https://github.com/brunch/clean-css-brunch",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:brunch/clean-css-brunch.git"
+  },
+  "main": "./lib/index",
+  "scripts": {
+    "prepublish": "node setup.js prepublish",
+    "postpublish": "node setup.js postpublish",
+    "test": "node setup.js test"
+  },
+  "dependencies": {
+    "clean-css": "0.10.x"
+  },
+  "devDependencies": {
+    "mocha": "1.8.1",
+    "chai": "1.4.2"
+  }
+}
